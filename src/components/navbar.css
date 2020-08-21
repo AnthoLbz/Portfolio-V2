@@ -1,0 +1,55 @@
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: -0.5em;
+  left: -2em;
+}
+.list {
+  margin: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  transition: all ease-in-out 250ms;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: rgba(54, 226, 248, 0.7);
+  position: absolute;
+  top: 1.5em;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+  text-decoration: none;
+}
+
+nav a:hover::before {
+  width: 100%;
+  text-decoration: none;
+}
+nav a:active {
+  width: 100%;
+  text-decoration: none;
+}

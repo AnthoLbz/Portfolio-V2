@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="456.553" height="399.218" viewBox="0 0 456.553 399.218">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="1.481" y2="0.442" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#df72e6"/>
+      <stop offset="0.431" stop-color="#f000ff"/>
+      <stop offset="0.456" stop-color="#f179f8"/>
+      <stop offset="1" stop-color="#d442e5"/>
+    </linearGradient>
+    <filter id="Soustraction_1" x="0" y="0" width="456.553" height="399.218" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#f700ff"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Soustraction_1)">
+    <path id="Soustraction_1-2" data-name="Soustraction 1" d="M68.373,361.435h0L-140.25,7.217,271.3,10.5,68.374,361.434ZM-128.961,13.725,68.319,349.38l192.5-332.9Z" transform="translate(162.75 15.28)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

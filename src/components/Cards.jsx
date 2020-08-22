@@ -5,7 +5,7 @@ import './card.css'
 
 function Card(props) {
     return (
-      <Fade bottom>
+      <Fade top>
         <div className="card" style={{ background:"rgba(0, 0, 0, 0.6)" }}>
           <div className="overflow">
             <div className="card-image" style={{

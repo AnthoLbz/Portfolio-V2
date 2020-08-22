@@ -59,11 +59,11 @@ img {
   z-index: 0;
   position: fixed;
   top: 24.8em;
-  left: 28.5em;
+  left: 27.8em;
   height: 4.5em;
-  width: 8em;
+  width: 9.5em;
   transform: perspective(300px) rotateX(30deg) scale(1);
-  animation: hover 10s linear infinite;
+  animation: hover 6s linear infinite;
 
 }
 
@@ -74,15 +74,15 @@ img {
 }
 @keyframes hover {
    0% {
-      transform: translatex(-10px)  perspective(300px)
+      transform: translatex(-4px)  perspective(300px)
          translatez(10px);
    }
    50% {
-      transform: translatex(10px)  perspective(300px)
-         translatez(30px);
+      transform: translatex(7px)  perspective(300px)
+         translatez(10px);
    }
    100% {
-      transform: translatex(-10px)  perspective(300px)
+      transform: translatex(-4px)  perspective(300px)
          translatez(10px);
    }
 }

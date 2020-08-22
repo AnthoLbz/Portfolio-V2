@@ -1,6 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navigationbar() {
 
@@ -8,48 +8,52 @@ function Navigationbar() {
     <>
       <div className="nav">
         <nav className="list">
-          <li>
-            <Link
-              to="/"
-              data-index="0"
+          <li className="Title">
+            <NavLink
+              to="/Accueil"
               style={{ textDecoration: "none" }}
               activeClassName="activeTitle"
             >
               Accueil
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <a
-              data-index="1"
-              href="#parcours"
-              style={{ textDecoration: "none" }}
-            >
-              Mon Parcours
-            </a>
-          </li>
-          <li>
-            <Link
-              to="/Projets"
-              data-index="2"
+            <NavLink
+              to="/Parcours"
               style={{ textDecoration: "none" }}
               activeClassName="activeTitle"
             >
-              Projets
-            </Link>
+              Mon Parcours
+            </NavLink>
           </li>
           <li>
-            <a data-index="3" href="#cv" style={{ textDecoration: "none" }}>
-              Mon CV
-            </a>
-          </li>
-          <li>
-            <a
-              data-index="4"
-              href="#contact"
+            <NavLink
+              to="/Projets"
               style={{ textDecoration: "none" }}
+              className="Title"
+              activeClassName="activeTitle"
+            >
+              Projets
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/CV"
+              style={{ textDecoration: "none" }}
+              activeClassName="activeTitle"
+            >
+              {" "}
+              Mon CV
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/Contact"
+              style={{ textDecoration: "none" }}
+              activeClassName="activeTitle"
             >
               Me Contacter
-            </a>
+            </NavLink>
           </li>
         </nav>
       </div>

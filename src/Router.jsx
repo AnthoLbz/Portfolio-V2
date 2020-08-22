@@ -21,6 +21,7 @@ const Router = () => {
         <animated.div key={key} style={props}>
           <Switch location={item}>
             <Route exact path="/" component={Accueil} />
+            <Route exact path="/Accueil" component={Accueil} />
             <Route exact path="/Projets" component={Projets} />
           </Switch>
         </animated.div>

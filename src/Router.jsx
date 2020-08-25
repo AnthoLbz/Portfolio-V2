@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import { Switch, Route} from "react-router-dom";
 import { __RouterContext } from "react-router";
 import Accueil from "./components/Accueil";
+import Parcours from "./components/Parcours";
 import Projets from "./components/Projets";
 import {useTransition, animated} from 'react-spring'
 
@@ -22,6 +23,7 @@ const Router = () => {
           <Switch location={item}>
             <Route exact path="/" component={Accueil} />
             <Route exact path="/Accueil" component={Accueil} />
+            <Route exact path="/Parcours" component={Parcours} />
             <Route exact path="/Projets" component={Projets} />
           </Switch>
         </animated.div>

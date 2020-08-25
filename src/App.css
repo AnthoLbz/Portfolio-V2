@@ -1,50 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Saira:700");
 @import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 
-.slide {
-  width: 100vw;
-  height: 100vh;
-}
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 500vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
-.one {
-  background: none;
-  font-family: "Saira", sans-serif;
-  font-weight: 700;
-}
-.two {
-  background: none;
-}
-.three {
-  background: none;
-  display: flex;
-  flex-direction: row;
-  padding-left: 2em;
-}
-.four {
-  background: none;
-}
-.five {
-  background: none;
-}
-
-.outer-wrapper {
-  width: 100vh;
-  height: 100vw;
-  transform: rotate(-90deg) translateX(-100vh);
-  transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: absolute;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  scroll-behavior: smooth;
-}
 ::-webkit-scrollbar {
   display: none;
 }

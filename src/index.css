@@ -24,11 +24,11 @@ img {
   width: 100%;
   transition: top 1s;
   z-index: -1;
+  top: 0em;
 }
 .graph-container {
   overflow: hidden;
   height: 100vh;
-  z-index: -1;
 }
 .graph {
   background: linear-gradient(

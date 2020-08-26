@@ -3,52 +3,194 @@
   top: 1em;
 }
 
-.blue-frames {
+.top-frames {
   position: fixed;
-  top: 3.8em;
+  top: 4.8em;
   left: 2em;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .blue-arrow {
   position: fixed;
-  top: 11em;
-  left: -3em;
+  top: 13.2em;
+  left: -4.8em;
 }
-.pink-arrow {
+
+.bottom-frames {
   position: fixed;
-  top: 13.1em;
-  left: 4em;
-}
-.pink-frames {
-  position: fixed;
-  top: 15.8em;
-  left: 5em;
+  top: 13.79em;
+  left: 7em;
+  -webkit-transform: scaleY(-1) scaleX(-1);
+  transform: scaleY(-1) scaleX(-1);
 }
 .blue-arrow path:nth-child(1) {
-animation: linear 2s slidein;
+  animation: linear 3s slidein;
 }
-.blue-arrow path:nth-child(2) {
 
-animation: linear 2s slidein;
+.top-frames path:nth-child(1) {
+  animation: linear 3s slideup;
 }
-.blue-arrow path:nth-child(3) {
-
-animation: linear 3s slideup;
+.top-frames path:nth-child(2) {
+  animation: linear 3s slideup;
 }
-.blue-arrow path:nth-child(4) {
-
-animation: linear 3s slideup;
+.top-frames path:nth-child(3) {
+  animation: linear 3s slideup;
 }
-.blue-arrow path:nth-child(5) {
+.top-frames path:nth-child(4) {
+  animation: linear 3s slideup;
+}
+.top-frames path:nth-child(5) {
+  animation: linear 3s slideup;
+}
+.top-frames path:nth-child(6) {
+  animation: linear 3s slideup;
+}
+.top-frames path:nth-child(7) {
+  animation: linear 3s slideup;
+}
+.top-frames path:nth-child(8) {
+  animation: linear 3s slideup;
+}
+.top-frames path:nth-child(9) {
+  animation: linear 3s slideup;
+}
 
-animation: linear 3s slideup;
+.bottom-frames path:nth-child(1) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(2) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(3) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(4) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(5) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(6) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(7) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(8) {
+  animation: linear 3s slideup;
+}
+.bottom-frames path:nth-child(9) {
+  animation: linear 3s slideup;
 }
 
 @keyframes slidein {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 @keyframes slideup {
-  from { transform: scaleY(0); }
-  to   { transform: scaleY(1); }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.box-1 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 7.45em;
+  left: 3.22em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
+}
+.box-2 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 7.45em;
+  left: 31.63em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
+}
+.box-3 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 7.45em;
+  left: 60.05em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
+}
+.box-4 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 21.5em;
+  left: 9.9em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
+}
+.box-5 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 21.5em;
+  left: 38.3em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
+}
+.box-6 {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 21.5em;
+  left: 66.7em;
+  color: white;
+  font-size: 12px;
+  width: 17.33em;
+  height: 9.1em;
+  overflow-wrap: anywhere;
+  padding: 2px 2px 0px 2px;
+  animation: appear 5s cubic-bezier(1, 0, 0.8, 1);
 }

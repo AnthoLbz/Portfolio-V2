@@ -7,7 +7,9 @@ import imageBG from './images/Web 1920 – 1.svg'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import imageCar from "./images/324240650359211.webp";
-
+import './fonts/astron-boy.video.ttf'
+import './fonts/astron-boy.regular.ttf'
+import './fonts/LunaticSuperstar-8KgB.otf'
 
 ReactDOM.render(
   <BrowserRouter>

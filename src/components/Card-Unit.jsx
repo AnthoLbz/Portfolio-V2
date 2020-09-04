@@ -20,6 +20,7 @@ function CardUnit() {
               l'HTML et CSS. Référence les films du MCU par ordre de sortie,
               ordre chronologique, propose des fiches personnages ainsi qu'une
               page articles."
+              link="https://antholbz.github.io/AnthoLbz.github.io/landing-page.html"
             />
           </div>
           <div>
@@ -29,6 +30,7 @@ function CardUnit() {
               text="Projet de jeu de Memory, basé sur les films d'horreur. Première
               application React réalisée en groupe, sur une durée d'un mois.
               Beaucoup de cheveux perdus, mais l'horreur est au rendez-vous."
+              link="https://memory-horror-game.netlify.app/"
             />
           </div>
           <div>
@@ -37,8 +39,8 @@ function CardUnit() {
               title="Hackaton #1 - Trip Roulette"
               text="Réalisé lors de notre 1er Hackaton, durant la période de
               confinement liée au covid-19. Le thème imposé était le voyage
-              depuis son canapé, que nous avons pris au pied de la lettre! Pour
-              plus d'informations, la notice est sur le GitHub."
+              depuis son canapé, pris au pied de la lettre! Notice sur le GitHub."
+              link="https://trip-roulette.netlify.app/"
             />
           </div>
           <div>

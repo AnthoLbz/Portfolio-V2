@@ -210,7 +210,7 @@ function Parcours() {
             </Fade>
             <Fade>
               <p data-description="Aujourd'hui">
-                Malgré tout, avec un promo qui se serre les coudes, de multiples
+                Malgré tout, avec une promo qui se serre les coudes, de multiples
                 projets et hackatons, et une bonne structure, je peux dire
                 fièrement aujourd'hui: <br />
                 <br />I am Dev (Junior) !

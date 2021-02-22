@@ -5,7 +5,6 @@ import './card.css'
 
 function Card(props) {
     return (
-      <Fade top>
         <div className="card" style={{ background: "rgba(0, 0, 0, 0.1)" }}>
           <div className="overflow">
             <div
@@ -24,7 +23,6 @@ function Card(props) {
             <p className="card-text">{props.text}</p>
           </div>
         </div>
-      </Fade>
     );
 }
 

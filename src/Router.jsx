@@ -4,6 +4,8 @@ import { __RouterContext } from "react-router";
 import Accueil from "./components/Accueil";
 import Parcours from "./components/Parcours";
 import Projets from "./components/Projets";
+import MonCV from "./components/MonCV";
+import Contact from "./components/Contact";
 import {useTransition, animated} from 'react-spring'
 
 
@@ -25,6 +27,8 @@ const Router = () => {
             <Route exact path="/Accueil" component={Accueil} />
             <Route exact path="/Parcours" component={Parcours} />
             <Route exact path="/Projets" component={Projets} />
+            <Route exact path="/MonCV" component={MonCV} />
+            <Route exact path="/Contact" component={Contact} />
           </Switch>
         </animated.div>
       ))}

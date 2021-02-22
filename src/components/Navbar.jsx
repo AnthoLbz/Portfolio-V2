@@ -38,11 +38,10 @@ function Navigationbar() {
           </li>
           <li>
             <NavLink
-              to="/CV"
+              to="/MonCV"
               style={{ textDecoration: "none" }}
               activeClassName="activeTitle"
             >
-              {" "}
               Mon CV
             </NavLink>
           </li>

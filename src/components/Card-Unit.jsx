@@ -4,10 +4,11 @@ import image1 from "../images/screen-projet1.png";
 import image2 from "../images/screen-projet2.PNG";
 import image3 from "../images/screen-hackaton.PNG";
 import image4 from "../images/screen projet3.PNG";
+import Modal1 from "./modals/Modal1.jsx"
 import "./card.css";
 
 
-function CardUnit() {
+function CardUnit(props) {
   return (
     <div className="pageProjets">
       <div className="container-fluid d-flex justify-content-center">
@@ -44,10 +45,14 @@ function CardUnit() {
             />
           </div>
           <div>
-            <Cards imgsrc={image4} title="Test4" text="" />
+            <Cards imgsrc={image4} title="Hackaton #2 - Hermes" text="" />
           </div>
           <div>
-            <Cards />
+            <Cards
+              imgsrc={image4}
+              title="Projet #3 - Caval Cloud"
+              text=""
+            />
           </div>
         </div>
       </div>

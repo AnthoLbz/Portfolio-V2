@@ -8,8 +8,9 @@ function Parcours() {
 
   return (
     <>
-      <div className="flex-parent">
-        <div className="input-flex-container">
+      <div class="flex-parent">
+        <div class="input-flex-container">
+          {/*<div class="dots-before" />*/}
           <input
             type="radio"
             name="timeline-dot"
@@ -17,9 +18,9 @@ function Parcours() {
             checked={checked === "2012"}
             onChange={(e) => setChecked("2012")}
           />
-          <div className="dot-info" data-description="2012">
-            <span className="year">2012</span>
-            <span className="label">Licence, tabernac'</span>
+          <div class="dot-info" data-description="2012">
+            <span class="year">2012</span>
+            <span class="label">Licence, tabernac'</span>
           </div>
           <input
             type="radio"
@@ -28,9 +29,9 @@ function Parcours() {
             checked={checked === "2013"}
             onChange={(e) => setChecked("2013")}
           />
-          <div className="dot-info" data-description="2013">
-            <span className="year">2013</span>
-            <span className="label">La crise</span>
+          <div class="dot-info" data-description="2013">
+            <span class="year">2013</span>
+            <span class="label">La crise</span>
           </div>
           <input
             type="radio"
@@ -39,9 +40,9 @@ function Parcours() {
             checked={checked === "2014"}
             onChange={(e) => setChecked("2014")}
           />
-          <div className="dot-info" data-description="2014">
-            <span className="year">2014</span>
-            <span className="label">L'exil breton</span>
+          <div class="dot-info" data-description="2014">
+            <span class="year">2014</span>
+            <span class="label">L'exil breton</span>
           </div>
           <input
             type="radio"
@@ -50,9 +51,9 @@ function Parcours() {
             checked={checked === "2015"}
             onChange={(e) => setChecked("2015")}
           />
-          <div className="dot-info" data-description="2015">
-            <span className="year">2015</span>
-            <span className="label">Best Chaudières Ever</span>
+          <div class="dot-info" data-description="2015">
+            <span class="year">2015</span>
+            <span class="label">Best Chaudières Ever</span>
           </div>
           <input
             type="radio"
@@ -61,9 +62,9 @@ function Parcours() {
             checked={checked === "2018"}
             onChange={(e) => setChecked("2018")}
           />
-          <div className="dot-info" data-description="2018">
-            <span className="year">2018</span>
-            <span className="label">La fin d'une ère</span>
+          <div class="dot-info" data-description="2018">
+            <span class="year">2018</span>
+            <span class="label">La fin d'une ère</span>
           </div>
           <input
             type="radio"
@@ -72,9 +73,9 @@ function Parcours() {
             checked={checked === "2018-bis"}
             onChange={(e) => setChecked("2018-bis")}
           />
-          <div className="dot-info" data-description="2018-bis">
-            <span className="year">2018-bis</span>
-            <span className="label">I am Stéphane Plaza !</span>
+          <div class="dot-info" data-description="2018-bis">
+            <span class="year">2018-bis</span>
+            <span class="label">I am Stéphane Plaza !</span>
           </div>
           <input
             type="radio"
@@ -83,9 +84,9 @@ function Parcours() {
             checked={checked === "2019"}
             onChange={(e) => setChecked("2019")}
           />
-          <div className="dot-info" data-description="2019">
-            <span className="year">2019</span>
-            <span className="label">Le mauvais tampon</span>
+          <div class="dot-info" data-description="2019">
+            <span class="year">2019</span>
+            <span class="label">Le mauvais tampon</span>
           </div>
           <input
             type="radio"
@@ -94,9 +95,9 @@ function Parcours() {
             checked={checked === "2019-bis"}
             onChange={(e) => setChecked("2019-bis")}
           />
-          <div className="dot-info" data-description="2019-bis">
-            <span className="year">2019-bis</span>
-            <span className="label">Back to the roots !</span>
+          <div class="dot-info" data-description="2019-bis">
+            <span class="year">2019-bis</span>
+            <span class="label">Back to the roots !</span>
           </div>
           <input
             type="radio"
@@ -105,9 +106,9 @@ function Parcours() {
             checked={checked === "2020"}
             onChange={(e) => setChecked("2020")}
           />
-          <div className="dot-info" data-description="2020">
-            <span className="year">2020</span>
-            <span className="label">Wild Covid School</span>
+          <div class="dot-info" data-description="2020">
+            <span class="year">2020</span>
+            <span class="label">Wild Covid School</span>
           </div>
           <input
             type="radio"
@@ -116,21 +117,11 @@ function Parcours() {
             checked={checked === "Aujourd'hui"}
             onChange={(e) => setChecked("Aujourd'hui")}
           />
-          <div className="dot-info" data-description="Aujourd'hui">
-            <span className="year">Aujourd'hui</span>
-            <span className="label">Open World !</span>
+          <div class="dot-info" data-description="Aujourd'hui">
+            <span class="year">Aujourd'hui</span>
+            <span class="label">Open World !</span>
           </div>
-          <input
-            type="radio"
-            name="timeline-dot"
-            data-description="demain"
-            checked={checked === "demain"}
-            onChange={(e) => setChecked("demain")}
-          />
-          <div className="dotinfo" data-description="demain">
-
-          </div>
-
+          {/*<div class="dots-after" />*/}
           <div id="timeline-descriptions-wrapper">
             <Fade>
               <p data-description="2012">
@@ -219,20 +210,12 @@ function Parcours() {
             </Fade>
             <Fade>
               <p data-description="Aujourd'hui">
-                Malgré tout, avec une promo qui se serre les coudes, de
-                multiples projets et hackatons, et une bonne structure, je peux
-                dire fièrement aujourd'hui:
+                Malgré tout, avec une promo qui se serre les coudes, de multiples
+                projets et hackatons, et une bonne structure, je peux dire
+                fièrement aujourd'hui: 
                 <br />
-                <br />I am Dev (Junior) !
-              </p>
-            </Fade>
-            <Fade>
-              <p data-description="demain">
-                Malgré tout, avec une promo qui se serre les coudes, de
-                multiples projets et hackatons, et une bonne structure, je peux
-                dire fièrement aujourd'hui:
                 <br />
-                <br />I am Dev (Junior) !
+                I am Dev (Junior) !
               </p>
             </Fade>
           </div>

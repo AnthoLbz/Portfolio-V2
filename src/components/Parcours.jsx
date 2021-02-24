@@ -10,7 +10,6 @@ function Parcours() {
     <>
       <div className="flex-parent">
         <div className="input-flex-container">
-          {/*<div className="dots-before" />*/}
           <input
             type="radio"
             name="timeline-dot"
@@ -121,7 +120,17 @@ function Parcours() {
             <span className="year">Aujourd'hui</span>
             <span className="label">Open World !</span>
           </div>
-          {/*<div className="dots-after" />*/}
+          <input
+            type="radio"
+            name="timeline-dot"
+            data-description="demain"
+            checked={checked === "demain"}
+            onChange={(e) => setChecked("demain")}
+          />
+          <div className="dotinfo" data-description="demain">
+
+          </div>
+
           <div id="timeline-descriptions-wrapper">
             <Fade>
               <p data-description="2012">
@@ -210,12 +219,20 @@ function Parcours() {
             </Fade>
             <Fade>
               <p data-description="Aujourd'hui">
-                Malgré tout, avec une promo qui se serre les coudes, de multiples
-                projets et hackatons, et une bonne structure, je peux dire
-                fièrement aujourd'hui: 
+                Malgré tout, avec une promo qui se serre les coudes, de
+                multiples projets et hackatons, et une bonne structure, je peux
+                dire fièrement aujourd'hui:
                 <br />
+                <br />I am Dev (Junior) !
+              </p>
+            </Fade>
+            <Fade>
+              <p data-description="demain">
+                Malgré tout, avec une promo qui se serre les coudes, de
+                multiples projets et hackatons, et une bonne structure, je peux
+                dire fièrement aujourd'hui:
                 <br />
-                I am Dev (Junior) !
+                <br />I am Dev (Junior) !
               </p>
             </Fade>
           </div>

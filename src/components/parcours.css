@@ -253,7 +253,7 @@ input[data-description="2020"]:checked
 input[data-description="Aujourd'hui"]:checked
   ~ #timeline-descriptions-wrapper
   p[data-description="Aujourd'hui"] {
-  display: block;
+  display: block !important;
 }
 
 @media (min-width: 1250px) {

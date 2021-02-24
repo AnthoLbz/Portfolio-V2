@@ -10,11 +10,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3em;
+  font-size: 5em;
   transition: font-size 1s;
   position: absolute;
-  left: 6.3em;
-  top: 3.85em;
+  left: 7.5em;
+  top: 4.7em;
   text-transform: uppercase;
   animation: bg-shift 0.5s ease-in-out infinite alternate;
 
@@ -38,14 +38,14 @@
 .accueil h1:before {
   content: " ";
   position: absolute;
-  top: 3.3em;
-  left: 8em;
+  top: 7.2em;
+  left: 15.1em;
   width: 3em;
-  height: 6.7em;
+  height: 12em;
   background: url("../images/Soustraction\ 1.svg") no-repeat;
-  background-size: 10em;
+  background-size: 18em;
   width: 120%;
-  z-index: 0;
+  z-index: -10;
 }
 
 .accueil h2 {
@@ -54,11 +54,11 @@
     -3px -2px 3px rgba(0,0,255,0.85),
     1px -2px 0 rgba(255,255,255,0.8);
     color: rgb(0, 225, 255);
-    font-size: 3.5em;
+    font-size: 6em;
     transform: rotateZ(-15deg);
     position: absolute;
-    top: 5em;
-    left: 7.4em;
+    top: 5.5em;
+    left: 8em;
     font-family: 'Courgette', cursive;
     transition: font-size 1s;
     z-index: 2;
@@ -67,8 +67,8 @@
 
 .name{
   position: absolute;
-    top: 2.5em;
-    left: 39.4em;
+    top: 9em;
+    left: 71em;
     width:18%;
 }
 

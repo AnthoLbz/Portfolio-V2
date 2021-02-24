@@ -4,7 +4,6 @@ import image1 from "../images/screen-projet1.png";
 import image2 from "../images/screen-projet2.PNG";
 import image3 from "../images/screen-hackaton.PNG";
 import image4 from "../images/screen projet3.PNG";
-import Modal1 from "./modals/Modal1.jsx"
 import "./card.css";
 
 

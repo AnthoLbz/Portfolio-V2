@@ -38,12 +38,16 @@ img {
   position: fixed;
   width: 100%;
   transition: top 1s;
-  z-index: -1;
+  z-index: -10;
   top: 0em;
 }
 .graph-container {
+  position: fixed;
+  z-index: -10;
+  top: 20em;
+  width: 100%;
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
 }
 .graph {
   background: linear-gradient(
@@ -62,23 +66,23 @@ img {
     );
   background-size: 4em 2em, 4em 2em;
   background-color: transparent;
-  height: 70em;
-  perspective: 1000px;
-  margin-top: 2em;
+  height: 80em;
+  perspective: 10px;
+  
   transform: perspective(220px) rotateX(45deg) scale(4);
   animation: move 10s linear infinite;
-  ;
+
 }
 
 .imgCar{
   z-index: 0;
   position: fixed;
-  top: 24.8em;
-  left: 27.8em;
-  height: 4.5em;
-  width: 9.5em;
+  top: 75%;
+  left: 43.5%;
+  height: 8em;
+  width: 13%;
   transform: perspective(300px) rotateX(30deg) scale(1);
-  animation: hover 6s linear infinite;
+  animation: hover 10s linear infinite;
 
 }
 
@@ -89,15 +93,15 @@ img {
 }
 @keyframes hover {
    0% {
-      transform: translatex(-4px)  perspective(300px)
-         translatez(10px);
+      transform: translatex(-1.5em)  perspective(300px)
+         translatez(1.5em);
    }
    50% {
-      transform: translatex(7px)  perspective(300px)
-         translatez(10px);
+      transform: translatex(1.5em)  perspective(300px)
+         translatez(1.5em);
    }
    100% {
-      transform: translatex(-4px)  perspective(300px)
-         translatez(10px);
+      transform: translatex(-1em)  perspective(300px)
+         translatez(1.5em);
    }
 }

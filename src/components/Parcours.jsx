@@ -10,7 +10,7 @@ function Parcours() {
     <>
       <div class="flex-parent">
         <div class="input-flex-container">
-          <div class="dots-before" />
+          {/*<div class="dots-before" />*/}
           <input
             type="radio"
             name="timeline-dot"
@@ -121,7 +121,7 @@ function Parcours() {
             <span class="year">Aujourd'hui</span>
             <span class="label">Open World !</span>
           </div>
-          <div class="dots-after" />
+          {/*<div class="dots-after" />*/}
           <div id="timeline-descriptions-wrapper">
             <Fade>
               <p data-description="2012">

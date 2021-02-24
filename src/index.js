@@ -15,9 +15,9 @@ ReactDOM.render(
   <BrowserRouter>
     <App />
     <img src={imageBG} alt="Background" />
-    <div class="graph-container">
-      <div class="graph" />
-      <img class="imgCar" src={imageCar} alt="car" />
+    <div className="graph-container">
+      <div className="graph" />
+      <img className="imgCar" src={imageCar} alt="car" />
     </div>
   </BrowserRouter>,
   document.getElementById("root")

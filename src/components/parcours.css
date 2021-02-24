@@ -12,7 +12,7 @@
   border: none;
   border-top: 7px dotted rgba(170, 0, 170, 1);
   background-color: none;
-  width: 1em;
+  width: 2em;
   position: fixed;
   top: 21.6em;
   left: 2em;
@@ -25,7 +25,7 @@
   border: none;
   border-top: 7px dotted rgb(119, 0, 255);
   background-color: none;
-  width: 1em;
+  width: 2em;
   position: fixed;
   top: 21.6em;
   left: 62.8em;
@@ -39,24 +39,25 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 90vw;
-  max-width: 1000px;
+  width: 90%;
   position: fixed;
-  top: -3em;
-  left: 1.7em;
-  z-index: 0;
+  top: 7em;
+  left: 3em;
+  z-index: 200;
   margin-left: calc((80vw - 25px) / 20);
   color: white;
+  margin-bottom: -20em;
 }
 
 input {
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(170, 0, 170, 1);
   position: relative;
   border-radius: 50%;
   border: 5px solid rgba(170, 0, 170);
-  top: 24em;
+  top: 31em;
+  left: 1em;
   display: block;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -80,16 +81,15 @@ input::after {
   transition: background-color 1s ease;
   background-color: rgba(170, 0, 170, 1);
   box-shadow: 0px 1px 5px rgba(170, 0, 170), 0px -1px 5px rgba(170, 0, 170);
-  width: 5vw;
-  height: 3px;
-  max-width: 70px;
+  width: 7vw;
+  height: 8px;
 }
 
 input::before {
-  left: calc(-5.2vw + 13.5px);
+  left: calc(1vw + 15px);
 }
 input::after {
-  right: calc(-5.2vw + 15.5px);
+  right: calc(1vw + 15px);
 }
 input:checked {
   transition: background-color 1s ease;
@@ -97,13 +97,15 @@ input:checked {
   box-shadow: 1px 1px 5px rgba(170, 0, 170), -1px -1px 5px rgba(170, 0, 170);
 }
 input:checked::before {
+  left: calc(1vw + 10px);
   transition: background-color 1s ease;
-  background-color: rgba(170, 0, 170, 1);
-  box-shadow: 1px 1px 5px rgba(170, 0, 170), -1px -1px 5px rgba(170, 0, 170);
+  background-color: rgba(119, 0, 255);
+  box-shadow: 1px 1px 5px rgba(119, 0, 255), -1px -1px 5px rgba(119, 0, 255);
 }
 input:checked::after {
-  background-color: rgb(119, 0, 255);
-  box-shadow: 1px 1px 5px rgb(119, 0, 255), -1px -1px 5px rgb(119, 0, 255);
+  right: calc(1vw + 15px);
+  background-color: rgb(170, 0, 170, 1);
+  box-shadow: 1px 1px 5px rgb(170, 0, 170), -1px -1px 5px rgb(170, 0, 170);
 }
 input:checked ~ input,
 input:checked ~ input::before,
@@ -112,32 +114,33 @@ input:checked ~ input::after {
   box-shadow: 1px 1px 5px rgb(119, 0, 255), -1px -1px 5px rgb(119, 0, 255);
 }
 input:checked + .dot-info span {
-  font-size: 13px;
+  font-size: 35px;
   font-weight: bold;
   color: white;
-  width: 90px;
+  width: 150px;
 }
 input:checked + .dot-info span.year {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 400;
   color: white;
-  width: 80px;
+  width: 150px;
 }
 
 input:checked + .dot-info span.label {
-  font-size: 14px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
-  width: 90px;
+  width: 200px;
+  top: -4.5em;
 }
 
 .dot-info {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   display: block;
   visibility: hidden;
   position: relative;
-  top: 24em;
+  top: 30.5em;
   z-index: -1;
   left: calc((((80vw - 25px) / 20) * -1) - 1px);
   color: white;
@@ -149,38 +152,38 @@ input:checked + .dot-info span.label {
   color: white;
 }
 .dot-info span.year {
-  bottom: -40px;
-  left: 100%;
-  width: 80px;
+  bottom: -2.5em;
+  left: 160%;
+  width: 150px;
   transform: translateX(-50%);
   font-family: "AstronVid";
-  font-size: 22px;
+  font-size: 28px;
 }
 .dot-info span.label {
-  top: -70px;
+  top: -120px;
   left: 0px;
   transform: rotateZ(-45deg);
-  width: 80px;
+  width: 150px;
   text-indent: -10px;
   color: white;
   font-family: "Lunatic";
-  font-size: 14px;
+  font-size: 24px;
 }
 
 #timeline-descriptions-wrapper {
   width: 100%;
-  margin-top: 120px;
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 35px;
   font-weight: 400;
   text-align: center;
   color: white;
-  border-top: solid 1px rgb(0, 195, 255);
-  border-bottom: solid 1px rgb(0, 195, 255);
+  border-top: solid 2px rgb(0, 195, 255);
+  border-bottom: solid 2px rgb(0, 195, 255);
   box-shadow: 2px 2px 5px rgba(170, 0, 170), 2px 2px 5px rgb(0, 195, 255);
   border-radius: 0px 30px 0px 30px;
   margin-left: -2em;
   height: 7em;
-  padding: 10px;
+  padding: 20px;
   font-family: "Lunatic";
   background: rgba(0, 0, 0, 0.3);
 }
@@ -254,24 +257,7 @@ input[data-description="Aujourd'hui"]:checked
 }
 
 @media (min-width: 1250px) {
-  .input-flex-container {
-    margin-left: 62.5px;
-  }
-
-  input::before {
-    left: -37.5px;
-  }
-  input::after {
-    right: -37.5px;
-  }
-
-  .dot-info {
-    left: calc((((1000px - 25px) / 20) * -1) - 1px);
-  }
-
-  #timeline-descriptions-wrapper {
-    margin-left: -37.5px;
-  }
+  
 }
 @media (max-width: 630px) {
   .flex-parent {
